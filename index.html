@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор надежных паролей</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Генератор паролей</h1>
+        
+        <div class="result-container">
+            <span id="password-display">Нажми "Создать"</span>
+            <button id="copy-btn">Копировать</button>
+        </div>
+
+        <div class="settings">
+            <div class="setting">
+                <label>Длина пароля (<span id="length-val">16</span>)</label>
+                <input type="range" id="length" min="8" max="50" value="16">
+            </div>
+            <div class="setting">
+                <label><input type="checkbox" id="uppercase" checked> Прописные (A-Z)</label>
+            </div>
+            <div class="setting">
+                <label><input type="checkbox" id="lowercase" checked> Строчные (a-z)</label>
+            </div>
+            <div class="setting">
+                <label><input type="checkbox" id="numbers" checked> Цифры (0-9)</label>
+            </div>
+            <div class="setting">
+                <label><input type="checkbox" id="symbols" checked> Символы (!@#$%^&*)</label>
+            </div>
+        </div>
+
+        <button id="generate-btn" class="main-btn">Создать пароль</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
